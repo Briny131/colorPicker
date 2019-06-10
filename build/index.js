@@ -39,6 +39,7 @@
         height:300px;
         background:#eee;
         padding:10px;`
+        light.style.cssText = `margin-left:10px`
         show.style.cssText = `position:absolute;
         width:50px;
         height:30px;
@@ -50,7 +51,7 @@
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         border-right: 10px solid ;
-        left:555px;
+        left:560px;
         top:132.5px`
         circle.style.cssText = `position:absolute;top:10px;left:10px`
         sure.style.cssText = `border-radius:4px;
