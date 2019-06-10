@@ -13,4 +13,4 @@ var btn = document.getElementById('btn')
 
 Color对象接受回调函数，使用show方法唤出取色板
 
-![展示图]()
+![展示图](https://github.com/Briny131/colorPicker/blob/master/img/2019-06-10_174525.png?raw=true)
