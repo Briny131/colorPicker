@@ -6,7 +6,7 @@
         this.gRed = 0
         this.gGreen = 0
         this.gBlue = 0
-        this.six = 1/6
+        this.seven = 1 / 7
         this.pos = 0.5
         this.colorTop = 0
         this.colorLeft = 0
@@ -267,33 +267,37 @@
     }
 
     Color.prototype.chooseColor = function(pos){
-        var six = this.six
-        var d = (pos % six) / six
-        var check = ~~(pos / six)
-        if(check == 0){
+        var seven = this.seven
+        var d = (pos % seven) / seven
+        var check = ~~(pos / seven)
+        if(check == 1){
             this.green = ~~(d * 255)
             this.red = 255
             this.blue = 0
-        }else if(check == 3){
+        }else if(check == 4){
             this.green = 255 - ~~(d * 255)
             this.blue = 255
             this.red = 0
-        }else if(check == 4){
+        }else if(check == 5){
             this.red = ~~(d * 255)
             this.blue = 255
             this.green = 0
-        }else if(check == 1){
+        }else if(check == 2){
             this.red = 255 - ~~(d * 255)
             this.green = 255
             this.blue = 0
-        }else if(check == 2){
+        }else if(check == 3){
             this.blue = ~~(d * 255)
             this.green = 255
             this.red = 0
-        }else{
+        }else if(check == 6){
             this.blue = 255 - ~~(d * 255)
             this.red = 255
             this.green = 0
+        }else{
+            this.red = ~~(d * 255)
+            this.green = 0
+            this.blue = 0
         }
         this.chooseGray(this.pos)
     }
@@ -313,7 +317,7 @@
         this.gRed = 0
         this.gGreen = 0
         this.gBlue = 0
-        this.six = 1/6
+        this.seven = 1 / 7
         this.pos = 0.5
         this.colorTop = 0
         this.colorLeft = 0
